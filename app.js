@@ -38,7 +38,7 @@ obj.natural = natural(naturalDate);
 res.send(obj);
 } else {
 var date = Date.parse(str);
-console.log(date)
+
 if (date){
 var naturalDate = new Date(date);
 obj.unix = date;
