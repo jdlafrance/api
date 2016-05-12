@@ -28,7 +28,7 @@ function natural(val){return (months[val.getMonth()] + ' ' + val.getDate() + ', 
 app.get('/', function(req, res){
 var url_parts = url.parse(req.url, true)                                                                    
 var search = url_parts.search;
-var str = search.replace('?','').replace(/%20/g, ' ');
+var str = search.replace('?','0').replace(/%20/g, ' ');
 
 
 if(new Date(str/1).getDate() > 0){
